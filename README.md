@@ -10,6 +10,10 @@ In order to entirely shutdown the stack and remove all persisted data, use the f
 
 ```console
 $ docker-compose down -v
+
+          docker-compose logs elasticsearch --Logging
+          docker-compose logs logstash  --Logging
+          docker-compose logs kibana  --Logging
 ```
 * user: *elastic*
 * password: *changeme*
