@@ -1,4 +1,23 @@
 # Elastic stack (ELK) on Docker
+# to run
+```bash
+git clone https://github.com/LukeCronje/docker-elk
+cd docker-elk
+
+docker-compose up -d
+```
+In order to entirely shutdown the stack and remove all persisted data, use the following Docker Compose command:
+
+```console
+$ docker-compose down -v
+
+          docker-compose logs elasticsearch --Logging
+          docker-compose logs logstash  --Logging
+          docker-compose logs kibana  --Logging
+```
+* user: *elastic*
+* password: *changeme*
+* Kibana web UI by opening <http://localhost:5601>
 
 [![Elastic Stack version](https://img.shields.io/badge/Elastic%20Stack-7.13.4-00bfb3?style=flat&logo=elastic-stack)](https://www.elastic.co/blog/category/releases)
 [![Build Status](https://github.com/deviantony/docker-elk/workflows/CI/badge.svg?branch=main)](https://github.com/deviantony/docker-elk/actions?query=workflow%3ACI+branch%3Amain)
